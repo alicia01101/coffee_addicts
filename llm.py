@@ -25,6 +25,7 @@ WAVE_OUTPUT_FILENAME = "recording.wav"
 # Command dictionary - add your own commands and actions
 COMMANDS = {
     "make coffee": "echo 'coffee in the making'",
+    "coffee" : "stop",
     "stop recording": "exit"
 }
 
@@ -77,15 +78,17 @@ def process_command(text):
     for command, action in COMMANDS.items():
         if command in text:
             print(f"Recognized command: {command}")
-            print(f"Executing: {action}")
             
-            if command == "stop recording":
-                return False
-                
+            if action == "stop":
+                print("Stopping the program.")
+                return False  # This will end the loop in main()
+            
+            # Execute shell command
+            print(f"Executing: {action}")
             result = subprocess.run(action, shell=True, capture_output=True, text=True)
             print(f"Result: {result.stdout}")
             return True
-    
+
     print("No matching command found")
     return True
 
