@@ -26,7 +26,7 @@ pip install openai pyaudio python-dotenv numpy
 Make sure you also have ffmpeg installed (required for audio processing by Whisper):
 
 sudo apt install ffmpeg
-``
+```
 
 🔑 Setup
 
