@@ -8,7 +8,7 @@ This project will enable hands-free control of a coffee machine using voice comm
 
 ```
 ├── llm.py # Main script for audio recording, transcription & command processing
-├── test.py # Script for testing and controlling the servo motor
+├── motor.py # Script for testing and controlling the servo motor
 ├── recording.wav # Audio file recorded from microphone (overwritten each run)
 ├── .env # Contains the OpenAI API key (not included in repo)
 └── README.md # Project documentation
