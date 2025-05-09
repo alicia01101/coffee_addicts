@@ -1,6 +1,6 @@
 # ☕ Voice-Controlled Coffee Machine with Raspberry Pi
 
-This project enables hands-free control of a coffee machine using voice commands. It uses a USB microphone to capture audio, OpenAI's Whisper API for transcription, and predefined actions (e.g., servo motor control) to execute commands such as "make coffee".
+This project will enable hands-free control of a coffee machine using voice commands. It uses a USB microphone to capture audio, OpenAI's Whisper API for transcription, and predefined actions (e.g., servo motor control) to execute commands such as "make coffee".
 
 ---
 
